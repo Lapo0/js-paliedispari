@@ -14,8 +14,7 @@ isPalindrome(parolaUtente)
 
 // creare una funzione per capire se la parola è palindroma
     
-    
-        // usando una comparazione tra gli indici del primo array e del secondo con le lettere invertite
+        
  
 function isPalindrome (parola) {
 
@@ -32,20 +31,27 @@ function isPalindrome (parola) {
     console.log(parolaArreyReverse)
 
     // confrontare tutti gli indici
-    let isWordPalindrome = true
 
+    // usando una comparazione tra gli indici del primo array e del secondo con le lettere invertite
     for (let i = 0; i < lowerCaseParola.length; i++) {
         if (parolaArray[i] !== parolaArreyReverse[i]) {
-            isWordPalindrome = false
+            return false
             console.log('non è palindroma')
+        } else {
+            return true
         }
     }
-    console.log(isWordPalindrome)
  }
 
 
 // comunicare all'utente se la parola inserita è palindroma o no
     // console.log
+
+    if (isPalindrome(parolaUtente)){
+        console.log('yes')
+    } else {
+        console.log('no')
+    }
 
 /*****************
  PARI E DISPARI
