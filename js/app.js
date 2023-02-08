@@ -3,7 +3,7 @@
 /*****************
  PALINDROMO
 ******************/
-/*
+
 // chiedere al'utente di inserire una parola
     // usare promt
 const parolaUtente = prompt('Inserisci una parola palindroma');
@@ -42,11 +42,11 @@ function isPalindrome (parola) {
     // console.log
 
 if (isPalindrome(parolaUtente)){
-    console.log('yes')
+    console.log('la parola ' + parolaUtente + ' è palindroma')
 } else {
-    console.log('no')
+    console.log('la parola ' + parolaUtente + ' non è palindroma')
 }
-*/
+
 
 /*****************
  PARI E DISPARI
@@ -59,7 +59,7 @@ while (evenOrOdd !== 'pari' && evenOrOdd !== 'dispari') {
     evenOrOdd = prompt('Scegli se pari o dispari')
 }
 
-console.log(evenOrOdd)
+console.log('Hai scelto ' + evenOrOdd)
 
 // far scegliere all'utente un numero tra 1 e 5
 let number
@@ -68,7 +68,7 @@ do {
     number = parseInt(prompt('scegli un numero da 1 a 5'))
 } while (number < 1 || number > 5)
 
-console.log(number)
+console.log('Hai scelto il numero: ' + number)
 
 // generare un numero random da 1 a 5 usando una funzione
 
@@ -76,14 +76,14 @@ let numberPc = randomNumber()
 
 function randomNumber (numeroRandom) {
     numeroRandom = Math.floor(Math.random() * 5) + 1
-    console.log(numeroRandom)
+    console.log('Il computer ha scelto: ' + numeroRandom)
     return numeroRandom
 }
 
 // sommiamo i due numeri
 
 let somma = number + numberPc
-console.log(somma)
+console.log('Il totale fa = ' + somma)
 
 // stambilire se la somma dei due numeri è pari o disapri usando una funzione
 let resto
@@ -108,9 +108,6 @@ if (isEven(somma)) {
 } else {
 	console.log('il numero è dispari', somma)
 }
-
-
-
 
 // comunicare il risultato all'utente
 
