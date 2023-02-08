@@ -74,17 +74,18 @@ console.log(number)
 
 // generare un numero random da 1 a 5 usando una funzione
 
-let numberPc
-
-randomNumber(numberPc)
-
+let numberPc = randomNumber()
 
 function randomNumber (numeroRandom) {
     numeroRandom = Math.floor(Math.random() * 5) + 1
     console.log(numeroRandom)
+    return numeroRandom
 }
 
 // sommiamo i due numeri
+
+let somma = number + numberPc
+console.log(somma)
 
 // stambilire se la somma dei due numeri è pari o disapri usando una funzione
 
