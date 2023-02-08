@@ -70,8 +70,6 @@ do {
 
 console.log(number)
 
-
-
 // generare un numero random da 1 a 5 usando una funzione
 
 let numberPc = randomNumber()
@@ -88,5 +86,38 @@ let somma = number + numberPc
 console.log(somma)
 
 // stambilire se la somma dei due numeri è pari o disapri usando una funzione
+let resto
+function isDivisible(num, divider) {
+	resto = num % divider
+	if (resto === 0) {
+		return true
+	} else {
+		return false
+	}
+}
+
+let numIsEven
+
+function isEven(num) {
+	numIsEven = isDivisible(num, 2)
+	return numIsEven
+}
+
+if (isEven(somma)) {
+	console.log('il numero è pari', somma)
+} else {
+	console.log('il numero è dispari', somma)
+}
+
+
+
 
 // comunicare il risultato all'utente
+
+if (evenOrOdd === 'pari' && resto === 0) {
+    console.log('hai vinto')
+} else if (evenOrOdd === 'dispari' && resto !== 0) {
+    console.log('hai vinto')
+} else {
+    console.log('hai perso')
+}
