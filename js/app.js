@@ -10,7 +10,7 @@ const parolaUtente = prompt('Inserisci una parola palindroma');
 console.log(parolaUtente)
 
 // invocare la funzione
-isPalindrome(parolaUtente)
+// isPalindrome(parolaUtente)
 
 // creare una funzione per capire se la parola è palindroma
     
@@ -31,14 +31,12 @@ function isPalindrome (parola) {
     console.log(parolaArreyReverse)
 
     // confrontare tutti gli indici
-
     // usando una comparazione tra gli indici del primo array e del secondo con le lettere invertite
     for (let i = 0; i < lowerCaseParola.length; i++) {
-        if (parolaArray[i] !== parolaArreyReverse[i]) {
-            return false
-            console.log('non è palindroma')
-        } else {
+        if (parolaArray[i] === parolaArreyReverse[i]) {
             return true
+        } else {
+            return false
         }
     }
  }
