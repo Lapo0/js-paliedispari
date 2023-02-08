@@ -14,9 +14,7 @@ isPalindrome(parolaUtente)
 
 // creare una funzione per capire se la parola è palindroma
     
-    // trasformare la parola in un array
-    // invertire gli indici dell'array
-    // confrontare tutti gli indici
+    
         // usando una comparazione tra gli indici del primo array e del secondo con le lettere invertite
  
 function isPalindrome (parola) {
@@ -25,9 +23,22 @@ function isPalindrome (parola) {
     const lowerCaseParola = parola.toLowerCase()
     console.log(lowerCaseParola)
 
+    // trasformare la parola in un array
     const parolaArray = [...lowerCaseParola]
     console.log(parolaArray)
 
+    // invertire gli indici dell'array
+    const parolaArreyReverse = parolaArray.slice().reverse()
+    console.log(parolaArreyReverse)
+
+    // confrontare tutti gli indici
+    for (let i = 0; i < lowerCaseParola.length; i++) {
+        if (parolaArray[i] === parolaArreyReverse[i]) {
+            console.log('eureka')
+        } else {
+            console.log('dhn')
+        }
+    }
 
  }
 
