@@ -3,7 +3,7 @@
 /*****************
  PALINDROMO
 ******************/
-
+/*
 // chiedere al'utente di inserire una parola
     // usare promt
 const parolaUtente = prompt('Inserisci una parola palindroma');
@@ -13,9 +13,6 @@ console.log(parolaUtente)
 // isPalindrome(parolaUtente)
 
 // creare una funzione per capire se la parola è palindroma
-    
-        
- 
 function isPalindrome (parola) {
 
     // trasformare tutti i caretteri minuscoli
@@ -39,26 +36,46 @@ function isPalindrome (parola) {
             return false
         }
     }
- }
-
+}
 
 // comunicare all'utente se la parola inserita è palindroma o no
     // console.log
 
-    if (isPalindrome(parolaUtente)){
-        console.log('yes')
-    } else {
-        console.log('no')
-    }
+if (isPalindrome(parolaUtente)){
+    console.log('yes')
+} else {
+    console.log('no')
+}
+*/
 
 /*****************
  PARI E DISPARI
 ******************/
 
 // far scegliere all'utente pari o disapri
+const evenOrOdd = prompt('Scegli se pari o dispari')
+console.log(evenOrOdd)
 // far scegliere all'utente un numero tra 1 e 5
 
+
+do {
+    const number = parseInt(prompt('scegli un numero da 1 a 5'))
+    console.log(number)
+} while (number < 1 || number > 5)
+
+
 // generare un numero random da 1 a 5 usando una funzione
+
+let numberPc
+
+randomNumber(numberPc)
+
+console.log(numberPc)
+
+function randomNumber (numeroRandom) {
+    numeroRandom = Math.floor(Math.random() * 6) + 1
+    console.log(numeroRandom)
+}
 
 // sommiamo i due numeri
 
