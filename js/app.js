@@ -53,15 +53,23 @@ if (isPalindrome(parolaUtente)){
 ******************/
 
 // far scegliere all'utente pari o disapri
-const evenOrOdd = prompt('Scegli se pari o dispari')
-console.log(evenOrOdd)
-// far scegliere all'utente un numero tra 1 e 5
+let evenOrOdd
 
+while (evenOrOdd !== 'pari' && evenOrOdd !== 'dispari') {
+    evenOrOdd = prompt('Scegli se pari o dispari')
+}
+
+console.log(evenOrOdd)
+
+// far scegliere all'utente un numero tra 1 e 5
+let number
 
 do {
-    const number = parseInt(prompt('scegli un numero da 1 a 5'))
-    console.log(number)
+    number = parseInt(prompt('scegli un numero da 1 a 5'))
 } while (number < 1 || number > 5)
+
+console.log(number)
+
 
 
 // generare un numero random da 1 a 5 usando una funzione
@@ -70,10 +78,9 @@ let numberPc
 
 randomNumber(numberPc)
 
-console.log(numberPc)
 
 function randomNumber (numeroRandom) {
-    numeroRandom = Math.floor(Math.random() * 6) + 1
+    numeroRandom = Math.floor(Math.random() * 5) + 1
     console.log(numeroRandom)
 }
 
