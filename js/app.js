@@ -32,14 +32,15 @@ function isPalindrome (parola) {
     console.log(parolaArreyReverse)
 
     // confrontare tutti gli indici
+    let isWordPalindrome = true
+
     for (let i = 0; i < lowerCaseParola.length; i++) {
-        if (parolaArray[i] === parolaArreyReverse[i]) {
-            console.log('eureka')
-        } else {
-            console.log('dhn')
+        if (parolaArray[i] !== parolaArreyReverse[i]) {
+            isWordPalindrome = false
+            console.log('non è palindroma')
         }
     }
-
+    console.log(isWordPalindrome)
  }
 
 
