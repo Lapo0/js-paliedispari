@@ -68,7 +68,7 @@ let number
 
 do {
     number = parseInt(prompt('scegli un numero da 1 a 5'))
-} while (number < 1 || number > 5)
+} while (isNaN(number) || number < 1 || number > 5)
 
 console.log('Hai scelto il numero: ' + number)
 
@@ -106,9 +106,9 @@ function isEven(num) {
 }
 
 if (isEven(somma)) {
-	console.log('il numero è pari', somma)
+	console.log('Il numero ', somma, ' è pari.')
 } else {
-	console.log('il numero è dispari', somma)
+	console.log('Il numero ', somma, ' è dispari.')
 }
 
 // comunicare il risultato all'utente
