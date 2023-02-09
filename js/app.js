@@ -27,15 +27,17 @@ function isPalindrome (parola) {
     const parolaArreyReverse = parolaArray.slice().reverse()
     console.log(parolaArreyReverse)
 
+
+    console.log(parolaArray, parolaArreyReverse)
     // confrontare tutti gli indici
     // usando una comparazione tra gli indici del primo array e del secondo con le lettere invertite
     for (let i = 0; i < lowerCaseParola.length; i++) {
-        if (parolaArray[i] === parolaArreyReverse[i]) {
-            return true
-        } else {
+        if (parolaArray[i] !== parolaArreyReverse[i]) {
             return false
-        }
+            break
+        } 
     }
+    return true
 }
 
 // comunicare all'utente se la parola inserita è palindroma o no
